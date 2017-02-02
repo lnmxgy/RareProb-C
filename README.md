@@ -100,5 +100,6 @@
  
  (3) ./RFile which contains the result vector R file named of inputfile name. Each file corresponds to the inputfile.   
  Note: the parameter following -i is a directory containing only your target file, you need to put your file into a directory.
+ 
  e.g  $ bash rareprob-c.sh -i ./data/genotypeFileDir -x 0
     
