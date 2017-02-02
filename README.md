@@ -1,7 +1,9 @@
 #RareProb-C
 # Requirements/Compatibility
    R language is necessary
+   
    Java1.7 or higher is necessary
+   
    Unix-like system is required           
    
 # Source Code Description
