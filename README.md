@@ -69,9 +69,11 @@
               This matrix is necessary since it is needed in the  imputation procedure.
               In Rareprob-C you do not need to prepare the refererence panel file, since rareprob-c can bootstrap them from cases and controls.    
               
+              
   # Usage and Options 
     
     1.1 Usage:  
+    
     $ bash rareprob-c.sh -i genotypeFileDirectory -x 1/0 
     
     -i: directory of the genotype file  
@@ -79,6 +81,7 @@
     -x: the causal variant vector X; 0 means no causal vector X is contained in genotype file. 1 means causal vector X is contained in genotype file.
     
     1.2 Selective Options 
+    
     -u [mutation_rate]: initial mutation rate for imputation processdure(default: 7.78e-4) 
     -d [dt]: genetic distance (default: 1.0) 
     -n [Iter_num]: the upper bound of iteration times for the estimation of parameter sita,P1 and miu.( default: 20) 
