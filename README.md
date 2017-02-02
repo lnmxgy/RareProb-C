@@ -70,7 +70,7 @@
               In Rareprob-C you do not need to prepare the refererence panel file, since rareprob-c can bootstrap them from cases and controls.    
               
               
-  # Usage and Options 
+# Usage and Options 
     
     1.1 Usage:  
     
