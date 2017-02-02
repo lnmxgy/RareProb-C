@@ -55,12 +55,7 @@
               ----------------- 
               each of lines represents genotype of each individual.
               And the 'A' and 'C' of the last character of every line represents the individual is a case or control. 
-          2.2 reference panel format ( necessary ) :
-          
-                ----------------          
-                1000010000100101   
-                0010100010000000   
-                0000001000100000    
+          2.2 reference panel format ( necessary ) :   
                 0100100001000000   
                 ----------------
                 
@@ -88,16 +83,22 @@
     -s [transition_rate]: the initial transition probability for the imputation(default: 5.0)
     -h [pro_threshold]: the posterior probability threshold for removing the information-poor individual data(defalut:1.0e-6)
     
-    Note: before run the rareprob2.sh file, you first need to run "make" in the root directory of Rareprob2 to compile the program. After this, you do not need to run this again on this computer. Once you change to another computer or system, you need to run "make" again. 
+    Note: before run the rareprob2
+          
+                ----------------          
+                1000010000100101   
+                0010100010000000   
+                0000001000100000 .sh file, you first need to run "make" in the root directory of Rareprob2 to compile the program. After this, you do not need to run this again on this computer. Once you change to another computer or system, you need to run "make" again. 
     
-    e.g. $ bash rareprob2.sh -i ./data/genotypeFileDir -x 1
+    e.g. $ bash rareprob-c.sh -i ./data/genotypeFileDir -x 1
     
  after you run this command, there will be three directories generated: 
  
  (1) ./data/referencePanel which contains the reference panel from the cases and control for the calculation of initial R. Each reference panel corresponds to the input genotype file.
  
- (2) ./data/result which contains only one file "statistic" recording the result of p-value, number of causal variant in the reference X, number of the selected causal variants by rareprob2 and the number of correctly identified causal variants by comparing the previous two result.
+ (2) ./data/result which contains only one file "statistic" recording the result of p-value, number of causal variant in the reference X, number of the selected causal variants by rareprob-c and the number of correctly identified causal variants by comparing the previous two result.
  
  (3) ./RFile which contains the result vector R file named of inputfile name. Each file corresponds to the inputfile.   
- Note: the parameter following -i is a directory containing only your target file, you need to put your file into a directory. e.g.2 $ bash rareprob-c.sh -i ./data/genotypeFileDir -x 0
+ Note: the parameter following -i is a directory containing only your target file, you need to put your file into a directory.
+ e.g  $ bash rareprob-c.sh -i ./data/genotypeFileDir -x 0
     
