@@ -7,15 +7,20 @@
    Unix-like system is required           
    
 # Source Code Description
+
   Rareprob-C contains the following file
+  
    (1) A probabilistic method for identifying rare variants:   
         C++ codes: probrare.cpp global.cpp global.h  
+        
         R codes: r/estimate.r r/initialX.r r/function.r r/P_value.r
-  (2) Implementation of hidden Markov models (HMM):
+   (2) Implementation of hidden Markov models (HMM):
         C codes: backward.c baum.c forward.c hmmrand.c hmmutil.c nrutil.c sequence.c verbi.c nrutil.h hmm.h
+        
    (3) Filtering, interval and calculation of initial R vector 
         java codes: intervalR.jar
-  (4) shell script file gathering the intervalR.jar and rareprob
+        
+   (4) shell script file gathering the intervalR.jar and rareprob
        linux shell: rareprob-c.sh
     
 # Data Format Requirement    
