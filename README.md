@@ -56,13 +56,18 @@
               each of lines represents genotype of each individual.
               And the 'A' and 'C' of the last character of every line represents the individual is a case or control. 
           2.2 reference panel format ( necessary ) :
+          
                 ----------------          
                 1000010000100101   
                 0010100010000000   
                 0000001000100000    
                 0100100001000000   
                 ----------------
-              the number of site is required to be equal to the number of variant. The reference panel Each element of this matrix represent the genotype of the reference panel. This matrix is necessary since it is needed in the  imputation procedure. In Rareprob2 you do not need to prepare the refererence panel file, since rareprob2 can bootstrap them from cases and controls.    
+                
+              the number of site is required to be equal to the number of variant. 
+              The reference panel Each element of this matrix represent the genotype of the reference panel.
+              This matrix is necessary since it is needed in the  imputation procedure.
+              In Rareprob-C you do not need to prepare the refererence panel file, since rareprob-c can bootstrap them from cases and controls.    
               
   # Usage and Options 
     
