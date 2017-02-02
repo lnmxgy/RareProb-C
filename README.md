@@ -63,19 +63,28 @@
     
     1.1 Usage:  
     $ bash rareprob-c.sh -i genotypeFileDirectory -x 1/0 
+    
     -i: directory of the genotype file  
     -r: directory of the reference panel file 
     -x: the causal variant vector X; 0 means no causal vector X is contained in genotype file. 1 means causal vector X is contained in genotype file.
+    
     1.2 Selective Options 
     -u [mutation_rate]: initial mutation rate for imputation processdure(default: 7.78e-4) 
     -d [dt]: genetic distance (default: 1.0) 
     -n [Iter_num]: the upper bound of iteration times for the estimation of parameter sita,P1 and miu.( default: 20) 
     -s [transition_rate]: the initial transition probability for the imputation(default: 5.0)
     -h [pro_threshold]: the posterior probability threshold for removing the information-poor individual data(defalut:1.0e-6)
+    
     Note: before run the rareprob2.sh file, you first need to run "make" in the root directory of Rareprob2 to compile the program. After this, you do not need to run this again on this computer. Once you change to another computer or system, you need to run "make" again. 
+    
     e.g. $ bash rareprob2.sh -i ./data/genotypeFileDir -x 1
+    
  after you run this command, there will be three directories generated: 
+ 
  (1) ./data/referencePanel which contains the reference panel from the cases and control for the calculation of initial R. Each reference panel corresponds to the input genotype file.
+ 
  (2) ./data/result which contains only one file "statistic" recording the result of p-value, number of causal variant in the reference X, number of the selected causal variants by rareprob2 and the number of correctly identified causal variants by comparing the previous two result.
- (3) ./RFile which contains the result vector R file named of inputfile name. Each file corresponds to the inputfile.   Note: the parameter following -i is a directory containing only your target file, you need to put your file into a directory. e.g.2 $ bash rareprob-c.sh -i ./data/genotypeFileDir -x 0
+ 
+ (3) ./RFile which contains the result vector R file named of inputfile name. Each file corresponds to the inputfile.   
+ Note: the parameter following -i is a directory containing only your target file, you need to put your file into a directory. e.g.2 $ bash rareprob-c.sh -i ./data/genotypeFileDir -x 0
     
